@@ -1,0 +1,125 @@
+.main {
+  background-color: #ECF1F8;
+  box-shadow: 0px 15px 10px -8px rgba(34, 60, 80, 0.2) inset;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+}
+
+.profile {
+  max-width: 350px;
+  padding: 10px;
+
+  &__name {
+    font-family: 'Montserrat', sans-serif;
+    color: #3E3F58;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__email {
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3E3F58;
+  }
+
+  &__edit {
+    position: relative;
+    padding-left: 26px;
+    font-family: 'Open Sans', sans-serif;
+    color: #F05D63;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  &__edit::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/pencil.svg');
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 24px 24px;
+  }
+
+  &__avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  &__status {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+}
+
+.status__item {
+  text-align: center;
+}
+
+.status-item__number {
+  color: #3E3F58;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.status-item__criterion {
+  font-family: 'Open Sans', sans-serif;
+  color: #3E3F58;
+  font-size: 18px;
+}
+
+.profile__descr {
+  font-family: 'Open Sans', sans-serif;
+  color: #3E3F58;
+  font-size: 16px;
+}
+
+.post__card {
+  max-width: 374px;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 14px 24px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 56px 24px 24px 24px;
+}
+
+.posts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media (max-width: 760px) {
+  .main__content {
+    flex-wrap: wrap;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .posts__wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .profile {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 712px) {
+  .post__card {
+    margin: 0 auto;
+  }
+}

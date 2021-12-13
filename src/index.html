@@ -1,13 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.scss">
-		<script defer type="module" src="index.js"></script>
-    <title>FE Template</title>
-  </head>
-  <body>
-    FE Template
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./syles/style.scss">
+  <script defer type="module" src="index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>swivl-test</title>
+</head>
+
+<body>
+  <header class="header header-same">
+    <div class="container header__wrapper">
+      <div class="header__info">
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <nav class="nav__menu">
+          <ul class="nav__menu-list">
+            <li class="menu__list-item">
+              <a href="#apple" class="list__item-link is-active">feed</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#Samsung" class="list__item-link">explore</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#smartphones&phones" class="list__item-link ">discussions</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__persone">
+        <ul class="persone__list">
+          <li class="persone__list-item">
+            Artur Wood
+          </li>
+
+          <li class="persone__list-item">
+            <img src="./images/persone-image.png" alt="persone">
+          </li>
+
+          <li class="persone__list-item">
+            <img src="./images/arrow-down.svg" alt="arrow-down">
+          </li>
+
+          <li class="persone__list-item">
+            <img src="./images/bell.svg" alt="gift">
+          </li>
+
+          <li class="persone__list-item">
+            <img src="./images/gift.svg" alt="gift">
+          </li>
+
+          <li class="persone__list-item">
+            <img src="./images/medium.svg" alt="M">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container main__content">
+      <div class="profile">
+        <div class="profile__info">
+          <div class="profile__avatar">
+            <img src="./images/avatar.png" alt="">
+          </div>
+          <div class="profile__info-wrapper">
+            <div class="profile__name">Benjamin <br> Clementine</div>
+            <div class="profile__email">@benclementine</div>
+            <div class="profile__edit">Edit Profile</div>
+          </div>
+        </div>
+        <ul class="profile__status">
+          <li class="status__item">
+            <div class="status-item__number">45</div>
+            <div class="status-item__criterion">synths</div>
+          </li>
+          <li class="status__item">
+            <div class="status-item__number">110</div>
+            <div class="status-item__criterion">followers</div>
+          </li>
+          <li class="status__item">
+            <div class="status-item__number">332</div>
+            <div class="status-item__criterion">following</div>
+          </li>
+        </ul>
+        <p class="profile__descr">Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between
+          20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on
+          XRP, bitcoin and Ethereum.</p>
+      </div>
+
+      <div class="profile__posts">
+        <div class="posts__status">
+          <span>Public</span>
+
+          <div class="ios-toggle">
+            <input type="checkbox" id="ios-toggle" /><label for="ios-toggle" />
+          </div>
+
+          <span>Private</span>
+        </div>
+
+        <input type="dropdown">
+
+        <div class="posts__wrapper">
+          <div class="post__card">
+            <p class="card__text">New air routes that promise cheap flights in</p>
+
+            <div class="post__author">
+              <span>Gregory Watkins</span>
+            </div>
+
+            <div class="post__link">
+              <span>Share</span>
+            </div>
+          </div>
+
+          <div class="post__card">
+            <p class="card__text">New air routes that promise cheap flights in</p>
+            <div class="post__author">
+              <span>Gregory Watkins</span>
+            </div>
+            <div class="post__link">
+              <span>Share</span>
+            </div>
+          </div>
+
+          <div class="post__card">
+            <p class="card__text">New air routes that promise cheap flights in</p>
+            <div class="post__author">
+              <span>Gregory Watkins</span>
+            </div>
+            <div class="post__link">
+              <span>Share</span>
+            </div>
+          </div>
+
+          <div class="post__card">
+            <p class="card__text">New air routes that promise cheap flights in</p>
+            <div class="post__author">
+              <span>Gregory Watkins</span>
+            </div>
+            <div class="post__link">
+              <span>Share</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+</body>
+
 </html>

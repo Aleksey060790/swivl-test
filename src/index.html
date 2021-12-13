@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./syles/style.scss">
+  <link rel="stylesheet" href="styles/style.scss">
   <script defer type="module" src="index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,24 +51,39 @@
             <img src="./images/arrow-down.svg" alt="arrow-down">
           </li>
 
-          <li class="persone__list-item">
-            <img src="./images/bell.svg" alt="gift">
-          </li>
+          <ul class="social__list">
+            <li class="persone__list-item">
+              <img src="./images/bell.svg" alt="gift">
+            </li>
 
-          <li class="persone__list-item">
-            <img src="./images/gift.svg" alt="gift">
-          </li>
+            <li class="persone__list-item">
+              <img src="./images/gift.svg" alt="gift">
+            </li>
 
-          <li class="persone__list-item">
-            <img src="./images/medium.svg" alt="M">
-          </li>
+            <li class="persone__list-item">
+              <img src="./images/medium.svg" alt="M">
+            </li>
+          </ul>
         </ul>
       </div>
+      <button class="header__button"></button>
     </div>
   </header>
   <section class="main">
+
     <div class="container main__content">
+
       <div class="profile">
+        <div class="profile__btn">
+          <img src="./images/drop-button.svg" alt="dropdown">
+        </div>
+        <div class="profile__dropdown" hidden>
+          <ul class="dropdown__menu">
+            <li class="dropdown__item-first">Report User</li>
+            <li class="dropdown__item-second">Block User</li>
+          </ul>
+        </div>
+
         <div class="profile__info">
           <div class="profile__avatar">
             <img src="./images/avatar.png" alt="">
@@ -100,57 +115,64 @@
 
       <div class="profile__posts">
         <div class="posts__status">
-          <span>Public</span>
+          <span class="post-status__item">Public</span>
 
           <div class="ios-toggle">
             <input type="checkbox" id="ios-toggle" /><label for="ios-toggle" />
           </div>
 
-          <span>Private</span>
+          <span class="post-status__item">Private</span>
         </div>
 
-        <input type="dropdown">
-
         <div class="posts__wrapper">
-          <div class="post__card">
+          <div class="card post__card">
             <p class="card__text">New air routes that promise cheap flights in</p>
 
-            <div class="post__author">
-              <span>Gregory Watkins</span>
-            </div>
-
-            <div class="post__link">
-              <span>Share</span>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post__link">
+                <span>Share</span>
+              </div>
             </div>
           </div>
 
           <div class="post__card">
             <p class="card__text">New air routes that promise cheap flights in</p>
-            <div class="post__author">
-              <span>Gregory Watkins</span>
-            </div>
-            <div class="post__link">
-              <span>Share</span>
-            </div>
-          </div>
-
-          <div class="post__card">
-            <p class="card__text">New air routes that promise cheap flights in</p>
-            <div class="post__author">
-              <span>Gregory Watkins</span>
-            </div>
-            <div class="post__link">
-              <span>Share</span>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post__link">
+                <span>Share</span>
+              </div>
             </div>
           </div>
 
           <div class="post__card">
             <p class="card__text">New air routes that promise cheap flights in</p>
-            <div class="post__author">
-              <span>Gregory Watkins</span>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post-action__wrapper">
+                <div class="post__action">88</div>
+                <div class="post__like">24</div>
+              </div>
             </div>
-            <div class="post__link">
-              <span>Share</span>
+          </div>
+
+          <div class="post__card">
+            <p class="card__text">New air routes that promise cheap flights in</p>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post-action__wrapper">
+                <div class="post__action">88</div>
+                <div class="post__like">24</div>
+              </div>
             </div>
           </div>
 
@@ -158,7 +180,6 @@
       </div>
     </div>
   </section>
-  </div>
 
 </body>
 

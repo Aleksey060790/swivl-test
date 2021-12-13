@@ -1,7 +1,7 @@
 .ios-toggle {
   box-sizing: border-box;
   display: inline-block;
-  font-size: 5px;
+  font-size: 7px;
   width: 5.3em;
 }
 
@@ -150,6 +150,14 @@
   list-style: none;
 }
 
+.profile__posts {
+  margin-left: 50px;
+}
+
+.main__dropdown {
+  margin-top: 16px;
+}
+
 .status__item {
   text-align: center;
 }
@@ -174,7 +182,16 @@
 }
 
 .posts__status {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
   margin-top: 16px;
+}
+
+.post-status__item {
+  font-family: "Open Sans", sans-serif;
+  color: #3E4056;
+  font-size: 16px;
 }
 
 .post__card {
@@ -183,13 +200,52 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  padding: 56px 24px 24px 24px;
+  padding: 0px 24px 24px 24px;
+}
+
+.post-status__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.card__text {
+  font-family: "Montserrat", sans-serif;
+  color: #3E3F58;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.post__author {
+  position: relative;
+  padding-left: 32px;
+  font-family: "Open Sans", sans-serif;
+  color: #3E3F58;
+  font-size: 16px;
+}
+
+.post__link {
+  font-family: "Open Sans", sans-serif;
+  color: #F05D63;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.post__author::before {
+  content: "";
+  position: absolute;
+  background-color: #B2B3BB;
+  border-radius: 50%;
+  left: 0px;
+  width: 24px;
+  height: 24px;
 }
 
 .posts__wrapper {
+  margin: 22px 0 10px;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 24px 24px;
 }
 
 @media (max-width: 760px) {
@@ -204,21 +260,17 @@
     margin-top: 20px;
   }
 
+  .posts__status {
+    margin: 0 auto;
+  }
+
   .profile {
     margin: 0 auto;
   }
-}
 
-@media (max-width: 712px) {
   .post__card {
     margin: 0 auto;
   }
-}
-
-.header__wrapper {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .header {
@@ -235,6 +287,26 @@
   display: flex;
   align-items: center;
   padding: 3px;
+}
+
+.header__wrapper {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__button {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background-image: url("action-button.d3d85f3c.svg");
+  background-position: center center;
+  border: none;
+  border-radius: 50%;
+  right: 0;
+  bottom: -37px;
+  cursor: pointer;
 }
 
 .nav__menu {
@@ -308,6 +380,12 @@
   .header__wrapper {
     flex-wrap: wrap;
   }
+
+  .header__button {
+    bottom: -30px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 590px) {
@@ -323,6 +401,12 @@
 @media (max-width: 450px) {
   .header__persone {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 410px) {
+  .header__button {
+    top: 5px;
   }
 }
 

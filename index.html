@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.8edbf0f2.css">
+  <link rel="stylesheet" href="/index.8edbf0f2.css">
   <script defer="" src="/index.379dd93c.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>swivl-test</title>
 </head>
 
@@ -64,6 +62,7 @@
           </li>
         </ul>
       </div>
+      <button class="header__button"></button>
     </div>
   </header>
   <section class="main">
@@ -100,58 +99,65 @@
 
       <div class="profile__posts">
         <div class="posts__status">
-          <span>Public</span>
+          <span class="post-status__item">Public</span>
 
           <div class="ios-toggle">
             <input type="checkbox" id="ios-toggle"><label for="ios-toggle">
-            </label>
-          </div>
+          </label></div>
 
-          <span>Private</span>
+          <span class="post-status__item">Private</span>
         </div>
 
-        <input type="dropdown">
+        <input class="main__dropdown" type="dropdown">
 
         <div class="posts__wrapper">
-          <div class="post__card">
+          <div class="card post__card">
             <p class="card__text">New air routes that promise cheap flights in</p>
 
-            <div class="post__author">
-              <span>Gregory Watkins</span>
-            </div>
-
-            <div class="post__link">
-              <span>Share</span>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post__link">
+                <span>Share</span>
+              </div>
             </div>
           </div>
 
           <div class="post__card">
             <p class="card__text">New air routes that promise cheap flights in</p>
-            <div class="post__author">
-              <span>Gregory Watkins</span>
-            </div>
-            <div class="post__link">
-              <span>Share</span>
-            </div>
-          </div>
-
-          <div class="post__card">
-            <p class="card__text">New air routes that promise cheap flights in</p>
-            <div class="post__author">
-              <span>Gregory Watkins</span>
-            </div>
-            <div class="post__link">
-              <span>Share</span>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post__link">
+                <span>Share</span>
+              </div>
             </div>
           </div>
 
           <div class="post__card">
             <p class="card__text">New air routes that promise cheap flights in</p>
-            <div class="post__author">
-              <span>Gregory Watkins</span>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post__link">
+                <span>Share</span>
+              </div>
             </div>
-            <div class="post__link">
-              <span>Share</span>
+          </div>
+
+          <div class="post__card">
+            <p class="card__text">New air routes that promise cheap flights in</p>
+            <div class="post-status__wrapper">
+              <div class="post__author">
+                <span>Gregory Watkins</span>
+              </div>
+              <div class="post-action__wrapper">
+                <div class="post__action">88</div>
+                <div class="post__like">24</div>
+              </div>
             </div>
           </div>
 
@@ -159,7 +165,7 @@
       </div>
     </div>
   </section>
-
+  
 
 </body>
 

@@ -173,6 +173,10 @@
   font-size: 16px;
 }
 
+.posts__status {
+  margin-top: 16px;
+}
+
 .post__card {
   max-width: 374px;
   height: 280px;
